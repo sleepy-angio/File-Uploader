@@ -20,12 +20,12 @@ Options
 
 Example snippet:
 
-<script>
+
 	var options = {
 		validFileFormats: ['image/png', 'image/jpg', 'image/jpeg'],
 		maximumFileSize: 0,
-		  errorMessages: [
-		"File is to big",
+		errorMessages: [
+			"File is to big",
 		  	"Forbidden file format",
 		  	"File name is not correct"
 		  ],
@@ -39,5 +39,5 @@ Example snippet:
 		formUpload: true,
 		dragUpload: true	
 	}
-</script>
+
 		
