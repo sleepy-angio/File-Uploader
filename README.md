@@ -19,8 +19,8 @@ Options
 - dragUpload: Boolean. Initiate the drag upload part (default true)
 
 Example snippet:
-
-
+```javascript
+<script>
 	var options = {
 		validFileFormats: ['image/png', 'image/jpg', 'image/jpeg'],
 		maximumFileSize: 0,
@@ -39,5 +39,5 @@ Example snippet:
 		formUpload: true,
 		dragUpload: true	
 	}
-
+</script>
 		
