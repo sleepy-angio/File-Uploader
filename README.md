@@ -20,6 +20,21 @@ Options
 
 Example snippet:
 ```javascript
+<div class="formContainer">
+	<button id="chooseFile" class="chooseFileBtn">Choose File</button>
+	<p class="fileName">The name of the file comes here...</p>
+	
+	<div id="fU">
+	    <form id="fUForm" enctype="multipart/form-data">
+	        <input id="fUInput" type="file" name="file" />
+	    </form>
+	  
+	    <button id="fUpCancel" class="cancelBtn">Cancel</button>
+	    <div id="fUDragContainer" class="dragContainer" draggable="true">Drop file here</div>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="jquery.fileuploader.js"></script>
 <script>
 	var options = {
 		validFileFormats: ['image/png', 'image/jpg', 'image/jpeg'],
