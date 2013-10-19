@@ -18,24 +18,26 @@ Options
 - formUpload: Boolean. Initiate the form upload part (default true)
 - dragUpload: Boolean. Initiate the drag upload part (default true)
 
-Use the following elements in your html:
+Example snippet:
 
-	            validFileFormats: ['image/png', 'image/jpg', 'image/jpeg'],
-	            maximumFileSize: 0,
-          		errorMessages: [
-                      "File is to big",
-          			"Forbidden file format",
-          			"File name is not correct"
-          		],
-	            onUploadDone: handleUploadDone,
-	            onError: handleError,
-	            onUploadStart: handleStart,
-	            onProgress: handleProgress,
-	            onCancelUpload: handleCancel,
-	            url: "/upload",
-          		action: "POST",
-          		formUpload: true,
-          		dragUpload: true	
-	        }
-
+<script>
+	var options = {
+		validFileFormats: ['image/png', 'image/jpg', 'image/jpeg'],
+		maximumFileSize: 0,
+		  errorMessages: [
+		"File is to big",
+		  	"Forbidden file format",
+		  	"File name is not correct"
+		  ],
+		onUploadDone: handleUploadDone,
+		onError: handleError,
+		onUploadStart: handleStart,
+		onProgress: handleProgress,
+		onCancelUpload: handleCancel,
+		url: "/upload",
+		action: "POST",
+		formUpload: true,
+		dragUpload: true	
+	}
+</script>
 		
