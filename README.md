@@ -21,9 +21,6 @@ Options
 Example snippet:
 ```javascript
 <div class="formContainer">
-	<button id="chooseFile" class="chooseFileBtn">Choose File</button>
-	<p class="fileName">The name of the file comes here...</p>
-	
 	<div id="fU">
 	    <form id="fUForm" enctype="multipart/form-data">
 	        <input id="fUInput" type="file" name="file" />
@@ -54,5 +51,6 @@ Example snippet:
 		formUpload: true,
 		dragUpload: true	
 	}
+	$("#fU").fileUploader(options);
 </script>
 		
