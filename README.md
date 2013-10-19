@@ -8,6 +8,15 @@ Options
 - validFileFormats: Array (default [])
 - maximumFileSize: Number in MB (default 0 = unlimited)
 - errorMessages: Array with error message (default: [ "File is to big", "Forbidden file format","File name is not correct"]
+- onUploadDone: Callback function
+- onError: Callback function. Returns an error object
+- onUploadStart: Callback function. Returns the file to be uploaded
+- onProgress: Callback function. Returns a decimal value
+- onCancelUpload: Callback function
+- url: String. Url to upload to
+- action: Default POST
+- formUpload: Boolean. Initiate the form upload part (default true)
+- dragUpload: Boolean. Initiate the drag upload part (default true)
 
 Use the following elements in your html:
 
